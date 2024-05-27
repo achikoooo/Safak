@@ -47,16 +47,16 @@ const Cartbox = () => {
     },
   ]
   return (
-    <div className='chartBox'>
-      <div className='boxInfo'>
+    <div className='chartbox'>
+      <div className='boxinfo'>
         <div className='title'>
-          <img src='/user.svg' alt='user' />
+          <img src='icons/user.svg' alt='user' />
           <span>Total Users</span>
         </div>
         <h1>11.238</h1>
-        <Link to='./'>View all</Link>
+        <Link to='/'>View all</Link>
       </div>
-      <div className='chartInfo'>
+      <div className='chartinfo'>
         <div className='chart'>
           <ResponsiveContainer width='100%' height='100%'>
             <LineChart width={300} height={100} data={data}>
