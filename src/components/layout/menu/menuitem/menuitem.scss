@@ -1,22 +1,25 @@
-@import '../../styles/variables.scss';
+@import '../../../../styles/variables.scss';
 
 .item {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
+
   .title {
     font-size: 12px;
     font-weight: 200;
     color: $soft-color;
     text-transform: uppercase;
   }
-  .listItem {
+
+  .list-item {
     display: flex;
     align-items: center;
     border-radius: 5px;
     gap: 10px;
     padding: 10px;
+
     &:hover {
       background-color: $soft-bg;
     }
