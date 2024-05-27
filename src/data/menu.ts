@@ -1,4 +1,17 @@
-export const menu = [
+export type MenuList = {
+  id: number;
+  title: string;
+  listItems: ListItem[];
+}
+
+export type ListItem = {
+  id: number;
+  title: string;
+  url: string;
+  icon: string;
+}
+
+export const menu: MenuList[] = [
   {
     id: 1,
     title: "main",
@@ -7,13 +20,13 @@ export const menu = [
         id: 1,
         title: "Homepage",
         url: "/",
-        icon: "home.svg",
+        icon: "icons/home.svg",
       },
       {
         id: 2,
         title: "Profile",
         url: "/users/1",
-        icon: "user.svg",
+        icon: "icons/user.svg",
       },
     ],
   },
@@ -25,25 +38,25 @@ export const menu = [
         id: 1,
         title: "Users",
         url: "/users",
-        icon: "user.svg",
+        icon: "icons/user.svg",
       },
       {
         id: 2,
         title: "Products",
         url: "/products",
-        icon: "product.svg",
+        icon: "icons/product.svg",
       },
       {
         id: 3,
         title: "Orders",
         url: "/orders",
-        icon: "order.svg",
+        icon: "icons/order.svg",
       },
       {
         id: 4,
         title: "Posts",
         url: "/posts",
-        icon: "post2.svg",
+        icon: "icons/post2.svg",
       },
     ],
   },
@@ -55,25 +68,25 @@ export const menu = [
         id: 1,
         title: "Elements",
         url: "/",
-        icon: "element.svg",
+        icon: "icons/element.svg",
       },
       {
         id: 2,
         title: "Notes",
         url: "/",
-        icon: "note.svg",
+        icon: "icons/note.svg",
       },
       {
         id: 3,
         title: "Forms",
         url: "/",
-        icon: "form.svg",
+        icon: "icons/form.svg",
       },
       {
         id: 4,
         title: "Calendar",
         url: "/",
-        icon: "calendar.svg",
+        icon: "icons/calendar.svg",
       },
     ],
   },
@@ -85,13 +98,13 @@ export const menu = [
         id: 1,
         title: "Settings",
         url: "/",
-        icon: "setting.svg",
+        icon: "icons/setting.svg",
       },
       {
         id: 2,
         title: "Backups",
         url: "/",
-        icon: "backup.svg",
+        icon: "icons/backup.svg",
       },
     ],
   },
@@ -103,13 +116,13 @@ export const menu = [
         id: 1,
         title: "Charts",
         url: "/",
-        icon: "chart.svg",
+        icon: "icons/chart.svg",
       },
       {
         id: 2,
         title: "Logs",
         url: "/",
-        icon: "log.svg",
+        icon: "icons/log.svg",
       },
     ],
   },
@@ -169,7 +182,7 @@ export const topDealUsers = [
 
 export const chartBoxUser = {
   color: "#8884d8",
-  icon: "/userIcon.svg",
+  icon: "icons/userIcon.svg",
   title: "Total Users",
   number: "11.238",
   dataKey: "users",
@@ -187,7 +200,7 @@ export const chartBoxUser = {
 
 export const chartBoxProduct = {
   color: "skyblue",
-  icon: "/productIcon.svg",
+  icon: "icons/productIcon.svg",
   title: "Total Products",
   number: "238",
   dataKey: "products",
@@ -204,7 +217,7 @@ export const chartBoxProduct = {
 };
 export const chartBoxRevenue = {
   color: "teal",
-  icon: "/revenueIcon.svg",
+  icon: "icons/revenueIcon.svg",
   title: "Total Revenue",
   number: "$56.432",
   dataKey: "revenue",
@@ -221,7 +234,7 @@ export const chartBoxRevenue = {
 };
 export const chartBoxConversion = {
   color: "gold",
-  icon: "/conversionIcon.svg",
+  icon: "/icons/conversionIcon.svg",
   title: "Total Ratio",
   number: "2.6",
   dataKey: "ratio",
