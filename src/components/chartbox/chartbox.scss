@@ -1,0 +1,19 @@
+.chartBox {
+  display: flex;
+  height: 100%;
+  .boxInfo {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      display: flex;
+      align-items: center;
+      grid-area: 10px;
+    }
+  }
+  .chartInfo {
+    flex: 2;
+    background-color: aqua;
+  }
+}
